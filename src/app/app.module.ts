@@ -1,3 +1,4 @@
+import { CdkStepperModule } from '@angular/cdk/stepper';
 import { ComponentsModule } from './components/components.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,7 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ComponentsModule
+    ComponentsModule,
+    CdkStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

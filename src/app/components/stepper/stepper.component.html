@@ -1,0 +1,22 @@
+<section class="container-fluid">
+
+  <h3 class="h3"> Multi-Stepper</h3>
+
+  <!-- Content from the CdkStep is projected here -->
+  <ng-container [ngTemplateOutlet]="selected.content"></ng-container>
+
+  <br>
+
+  <footer>
+    <button type="button" (click)="next()">Next</button>
+  </footer>
+
+  <!-- <footer>
+    <button cdkStepperPrevious class="btn btn-sm btn-info mr-2">&larr;</button>
+    <button class="btn btn-sm btn-info mr-2" *ngFor="let step of steps; let i = index;"
+      [ngClass]=" {'hide': selectedIndex != i}" (click)="click(i)">
+      click {{i+1}}</button>
+    <button cdkStepperNext class="btn btn-sm btn-info">&rarr;</button>
+  </footer> -->
+
+</section>
